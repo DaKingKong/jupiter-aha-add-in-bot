@@ -30,7 +30,8 @@ We strongly suggest that you should add a RDS proxy in-between your lambda and R
    6. `Additional connectivity configuration` -> `Existing VPC security groups`: choose both db and lambda groups
    7. `Create Proxy`
 4. To validate connectivity, in command line, do `aws rds describe-db-proxy-targets --db-proxy-name $DB_PROXY_NAME` (replace `$DB_PROXY_NAME` with your proxy name). A successful connection will return state as `AVAILABLE`.
-5. Now go to [here](#configure-on-ringcentral-developer-portal) to create your bot instance.
+5. Go to lambda service -> Configuration -> Database proxies -> Add your RDS proxy
+6. Now go to [here](#configure-on-ringcentral-developer-portal) to create your bot instance.
 
 
 ## Deploy to Heroku
